@@ -189,7 +189,7 @@ img{
     padding-bottom: 255px;
     background-image: url("../images/Group-2.png");
     background-repeat: no-repeat;
-    background-size: 200px 200px;
+    background-size: 358px 200px;
     background-position: right calc(50% + 250px);
 }
 
@@ -208,7 +208,7 @@ img{
 }
 
 .inner-right{
-    width: 445px;
+    max-width: 445px;
 }
 
 .inner-span{
@@ -454,22 +454,45 @@ img{
 }
 
 
+@media only screen and (max-width: 500px){
+    .site-title{
+        padding-bottom: 16px;
+        max-width: 327px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+    }
 
-@media only screen and (max-width: 490px) {
+    .inner-right{
+        max-width: 327px;
+        /* padding-bottom: 197px; */
+    }
+
     .site-inner-text{
-        width: 327px;
-        /* margin: 0 auto; */
-        /* text-align: center; */
+        max-width: 327px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 28px;
     }
 }
 
 
-@media only screen and (max-width: 460px) {
-    .site-main-inner{
-        
-        width: 375px;
-        background-size: contain;
+@media only screen and (max-width: 450px){
+    .inner-right{
+        max-width: 327px;
+        padding-bottom: px;
     }
+}
 
 
+@media only screen and (max-width: 400px){
+    .site-main-inner{
+        background-image: url("../images/Group-2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right calc(50% + 250px);
+    }
+    
 }
