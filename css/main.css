@@ -488,7 +488,7 @@ img{
     background-image: url("../images/Group-6.png");
     background-repeat: no-repeat;
     background-size: 244px 200px;
-    background-position: calc(50% - 645px) calc(50% - 15px); 
+    background-position: calc(50% - 645px) calc(50% - 2px); 
 }
 
 .question-inner{
@@ -704,8 +704,29 @@ img{
 
 
 
+@media only screen and (max-width: 1110px){
+   .question{
+    background-size: 200px 200px;
+    background-position:bottom -35px left;
+   }
 
+   .question-inner{
+      padding: 84px 0;
+   }
 
+   .question-title{
+    max-width: 336px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+   }
+
+   .question-link{
+    display: inline-block;
+    /* width: 100%;
+    max-width: 88px; */
+   }
+}
 
 
 
@@ -862,6 +883,23 @@ img{
         max-width: 327px; 
         padding-top: 140px;
       } 
+
+
+      .question-inner{
+        display: grid;
+        padding-top: 84px;
+        padding-bottom: 100px;
+    }
+
+    .question-title{
+        margin-bottom: 24px;
+    }
+
+    .question-link{
+        display: block;
+        margin: 0 auto;
+        max-width: 160px;
+     }
 }
 
 @media only screen and (max-width: 710px){
@@ -936,6 +974,8 @@ img{
     .item-text{
       max-width: 327px;
     }
+
+    
     
 }
 
@@ -995,6 +1035,11 @@ img{
     .inner-right{
         max-width: 327px;
         padding-bottom: px;
+    }
+
+    .question-title{
+        max-width: 327px;
+        text-align: center;
     }
 }
 
