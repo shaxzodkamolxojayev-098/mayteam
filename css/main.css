@@ -557,11 +557,25 @@ img{
     transition: tranform 0.3s ease;
 }
 
+.div{
+    max-width: 159px;
+}
+
 .footer-link:hover{
     transform: scale(1.2) ;
 }
 
+.inner-left{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
 .inner-left-inner{
+    
+    align-items: center;
+}
+
+.inner-left-inner div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -587,9 +601,16 @@ img{
 }
 
 
-/* .inner-center{
+.inner-center{
+   margin-left: 125px;
+}
 
-} */
+.inner-center-none{
+
+    display: none;
+}
+
+
 
 .inner-center-text{
     margin: 0;
@@ -601,15 +622,36 @@ img{
     opacity: 0.6;
 }
 
+
+.inner-right-none{
+    display: none;
+}
+
+.link-box{
+    margin-left: auto;
+    max-width: 115px;
+}
+
+
+.link-box-none{
+    display: none;
+}
+
 .right-link{
     display: inline-block;
+    text-align: end;
     margin-right: 16px;
     margin-bottom: 50px;
 }
 
-.right-link:nth-child(3){
-    margin-right: 0;
+.right-link-end{
+    display: inline-block;
+    text-align: end;
+    /* margin-right: 16px; */
+    margin-bottom: 50px;
 }
+
+
 
 /* .right-link:hover{
    background-color: #F67E7E;
@@ -902,6 +944,52 @@ img{
      }
 }
 
+
+
+@media only screen and (max-width: 770px){
+    .inner-center{
+        display: none;
+    }
+
+    .inner-left{
+        display: block;
+        /* text-align: -webkit-center; */
+    }
+
+    .div{
+        margin-bottom: 30px;
+    }
+
+    .inner-center-text{
+        text-align: end;
+        margin-bottom: 34px;
+    }
+
+    .inner-center-none{
+        display: block;
+    }
+
+    .link-box-none{
+        display: block;
+    }
+
+    .link-box{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 750px){
+    .footer-inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 48px 0; 
+    }
+}
+
+
+
 @media only screen and (max-width: 710px){
 
     .servises-inner{
@@ -1027,6 +1115,19 @@ img{
 
     .list-text{
         width: 327px;
+    }
+}
+
+
+@media only screen and (max-width: 470px){
+
+    .footer-inner{
+        display: block;
+    }
+
+    .inner-left{
+        display: block;
+        text-align: -webkit-center;
     }
 }
 
